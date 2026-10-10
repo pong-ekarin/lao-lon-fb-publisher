@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — เล่าหลอน Facebook Publisher</title>
+  <style>
+    body {
+      max-width: 720px;
+      margin: 60px auto;
+      padding: 0 24px;
+      font-family: system-ui, sans-serif;
+      line-height: 1.7;
+      color: #222;
+      background: #fafafa;
+    }
+    a { color: #2457a7; }
+    code { overflow-wrap: anywhere; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy Policy</h1>
+    <p>
+      This policy applies to เล่าหลอน — Facebook Publisher,
+      a personal tool maintained by Pong Ekarin.
+      The tool is intended for the Facebook Page owner's use.
+    </p>
+
+    <h2>Purpose</h2>
+    <p>
+      The app is used by the Page owner to upload and schedule
+      Thai ghost-story videos on the เล่าหลอน Facebook Page.
+    </p>
+
+    <h2>Facebook data access</h2>
+    <p>The app uses these permissions with the owner's consent:</p>
+    <ul>
+      <li>
+        <strong>pages_show_list:</strong> Identify Pages the owner manages
+        and obtain the access token for the selected Page.
+      </li>
+      <li>
+        <strong>pages_manage_posts:</strong> Publish and manage content
+        on the selected Page.
+      </li>
+      <li>
+        <strong>pages_read_engagement:</strong> Read Page content and
+        retrieve video processing and publication information.
+      </li>
+    </ul>
+
+    <h2>How data is used</h2>
+    <p>
+      Page information and the Page access token are used to authorize
+      publishing operations on the selected Page. Videos, titles,
+      descriptions, publishing settings, and optional subtitle files
+      are sent to Meta when the owner initiates an upload.
+      Meta's responses are used to report upload results, processing status,
+      and scheduling information.
+    </p>
+
+    <h2>Storage and retention</h2>
+    <p>
+      The Page access token is stored locally in the owner's project
+      workspace or supplied through an environment variable.
+      Locally stored tokens are retained for subsequent publishing
+      operations until the owner deletes them.
+      Tokens are not published on this website.
+    </p>
+    <p>
+      Publishing results may include Page IDs, video IDs, video links,
+      and processing or scheduling information. Any saved copies of
+      these results remain in the owner's workspace until deleted.
+      Uploaded content and its metadata are stored by Meta and can
+      be managed through Facebook or Meta Business Suite.
+    </p>
+
+    <h2>Data sharing</h2>
+    <p>
+      The app communicates with Meta and Facebook to perform publishing
+      operations. Published content is made available to viewers according
+      to Facebook's publication and visibility settings.
+      The app does not sell Facebook user data, share it with advertisers,
+      or use it to train artificial intelligence models.
+      Facebook data is used only for the publishing functions described here.
+    </p>
+
+    <h2 id="data-deletion">Revoking access and deleting local data</h2>
+    <p>
+      Because this is a personal tool, the owner controls its locally
+      stored data and can remove it directly:
+    </p>
+    <ol>
+      <li>
+        Stop using the publishing tool and remove its authorization
+        through the Facebook account's Business Integrations or
+        Apps and Websites settings, as applicable.
+      </li>
+      <li>
+        Delete the locally stored Page token at
+        <code>.local/publishing/facebook_page_token.txt</code>.
+      </li>
+      <li>
+        Remove <code>FACEBOOK_PAGE_ACCESS_TOKEN</code> from any environment
+        variables or configuration where it has been saved.
+      </li>
+      <li>
+        Delete any saved publishing results or other locally retained
+        Facebook data, including copies in backups.
+      </li>
+    </ol>
+    <p>
+      Deleting a local token does not revoke authorization on Facebook.
+      Removing authorization and deleting local data also do not
+      automatically delete videos or posts already published on Facebook.
+      To delete published content, remove it separately through Facebook
+      or Meta Business Suite.
+    </p>
+
+    <p><a href="./">Back to app information</a></p>
+  </main>
+</body>
+</html>
